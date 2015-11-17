@@ -17,7 +17,7 @@ public class Hipster
 	
 	private void setupArray()
 	{
-		hipsterPhrases[0] = ". ";
+		hipsterPhrases[0] = "That is art. ";
 		hipsterPhrases[1] = "I liked Guy Fieri before he was cool.  ";
 		hipsterPhrases[2] = "I am trying to be a vegan, but meat is so good ";
 		hipsterPhrases[3] = "Equal rights for plants.  ";
