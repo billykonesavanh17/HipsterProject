@@ -4,15 +4,15 @@ public class Hipster
 {
 	private String name;
 	private String [] hipsterPhrases;
-//  private Book [] hipsterBooks;
+	private Book [] hipsterBooks;
 	
 	public Hipster()
 	{
 		this.name = "";
 		this.hipsterPhrases = new String[4];
-//		this.hipsterBook = new Book[3];
+		this.hipsterBooks = new Book[3];
 		setupArray();
-//		setupBooks();
+		setupBooks();
 	}
 	
 	private void setupArray()
@@ -25,7 +25,26 @@ public class Hipster
 	
 	private void setupBooks()
 	{
+		Book firstBook, secondBook, thirdBook;
+		firstBook = new Book();
+		firstBook.setAuthor("Rick Riordan");
+		firstBook.setTitle("Red Pyramid");
+		firstBook.setSubject("Adventure fiction");
+		firstBook.setPageCount(516);
+		firstBook.setPrice(12.83);
 		
+		secondBook = new Book();
+		secondBook.setAuthor("John Steinbeck");
+		secondBook.setTitle("Of Mice and Men");
+		secondBook.setSubject("Novella");
+		secondBook.setPageCount(187);
+		secondBook.setPrice(17.79);
+		
+		thirdBook = new Book(336, "Harper Lee", "To Kill A Mockingbird", "Southern Gothic", 14.99);
+		
+		hipsterBooks[0] = firstBook;
+		hipsterBooks[1] = secondBook;
+		hipsterBooks[2] = thirdBook;
 	}
 	
 	public Hipster(String name)
@@ -51,6 +70,16 @@ public class Hipster
 	public void setHipsterPhrases(String[] hipsterPhrases)
 	{
 		this.hipsterPhrases = hipsterPhrases;
+	}
+	
+	public Book[] getHipsterBooks()
+	{
+		return hipsterBooks;
+	}
+
+	public void setHipsterBooks(Book[] hipsterBooks)
+	{
+		this.hipsterBooks = hipsterBooks;
 	}
 
 }
