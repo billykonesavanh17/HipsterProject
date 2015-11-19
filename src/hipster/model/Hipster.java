@@ -23,6 +23,11 @@ public class Hipster
 		hipsterPhrases[3] = "Equal rights for plants.  ";
 	}
 	
+	private void setupBooks()
+	{
+		
+	}
+	
 	public Hipster(String name)
 	{
 		
